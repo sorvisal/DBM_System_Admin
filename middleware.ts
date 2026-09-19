@@ -4,21 +4,21 @@ import type { NextRequest } from "next/server";
   const isDev = process.env.NODE_ENV !== "production";
   const connectSrc = [
     "'self'",
-    "https://dbmapi.palsatya.site",
+    "https://dbmapi.sorvisal.site",
     ...(isDev ? [
-      "https://dbmapi.palsatya.site0",
-      "wss://dbmapi.palsatya.site",
+      "https://dbmapi.sorvisal.site",
+      "wss://dbmapi.sorvisal.site",
       "http://127.0.0.1:5180",
-      "ws://dbmapi.palsatya.site",
+      "ws://dbmapi.sorvisal.site",
       "ws://127.0.0.1:5180",
       "http://127.0.0.1:3000",
       "ws://127.0.0.1:3000",
       "ws://localhost:51000",
       "ws://127.0.0.1:51000",
     ] : [
-      "https://dbmapi.palsatya.site0",
-      "wss://dbmapi.palsatya.site",
-      "ws://dbmapi.palsatya.site",
+      "https://dbmapi.sorvisal.site",
+      "wss://dbmapi.sorvisal.site",
+      "ws://dbmapi.sorvisal.site",
       "ws://127.0.0.1:5180",
     ]),
   ].join(" ");
